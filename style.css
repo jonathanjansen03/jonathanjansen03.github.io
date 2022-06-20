@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: 'Inconsolata';
+  font-size: 1.5rem;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  width: 50%;
+  background-color: white;
+  margin: 3rem 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.title,
+.subheading {
+  font-family: 'Lexend Deca';
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  padding-top: 4rem;
+}
+
+.content {
+  margin: 0 16rem;
+}
+
+.subheading {
+  font-size: 2rem;
+}
+
+.temp {
+  background-color: gray;
+  height: 15rem;
+  margin: 0 35rem;
+}
+
+.videos .subheading {
+  margin-top: 2rem;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+}
+
+.team, .cast {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cast {
+  width: 10rem;
+}
+
+.cast img {
+  width: 10rem;
+  border-radius: 5rem;
+  margin-top: 3rem;
+}
+
+.description:nth-child(2) {
+  padding-top: 0.5rem;
+}
+
+.description p {
+  padding-top: 2rem;
+}
+
+.barcode {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.barcode p {
+  font-family: 'Libre Barcode 128 Text';
+  font-size: 3rem;
+}
+
+@media all and (max-width: 1024px) {
+  p {
+    font-size: 1.25rem;
+  }
+
+  hr {
+    width: 60%;
+  }
+
+  .content {
+    margin: 0 10rem;
+  }
+
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .subheading {
+    font-size: 1.75rem;
+  }
+
+  .team {
+    width: 40rem;
+  }
+
+  .cast {
+    width: 8rem;
+  }
+
+  .cast img {
+    width: 8rem;
+  }
+
+  .description p {
+    padding-top: 1.75rem;
+  }
+
+  .barcode p {
+    font-size: 2.75rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  hr {
+    width: 70%;
+  }
+
+  .content {
+    margin: 0 5rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+  }
+
+  .description p {
+    padding-top: 0.75rem;
+  }
+
+  .barcode p {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  p {
+    font-size: 1rem;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  .content {
+    margin: 0 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+  }
+
+  .description p {
+    padding-top: 0.75rem;
+  }
+
+  .barcode p {
+    font-size: 2.25rem;
+  }
+}
+
+/* laptop 1280
+tablet 768
+mobile 480 */
